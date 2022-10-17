@@ -1,0 +1,61 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2206                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "7/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    sampleLine
+    {
+        vector
+        {
+            average(data,U) ( 725.082 0.10059 0.451264 );
+            min(data,U)     ( -2300.71 0.000159931 -226.24 );
+            max(data,U)     ( 7650.75 0.221865 603.364 );
+            average(U)      ( 725.082 0.10059 0.451264 );
+            min(U)          ( -2300.71 0.000159931 -226.24 );
+            max(U)          ( 7650.75 0.221865 603.364 );
+        }
+        label
+        {
+            size(data,U)    200;
+            size(U)         200;
+        }
+    }
+    forces
+    {
+        vector
+        {
+            pressureForce   ( 0 0 -5307080 );
+            viscousForce    ( -38.0004 0.00128567 -0.0347874 );
+            internalForce   ( 0 0 0 );
+            pressureMoment  ( 2.50996e-16 131471 0 );
+            viscousMoment   ( -3.44748e-24 0.000757599 3.08938e-05 );
+            internalMoment  ( 0 0 0 );
+        }
+    }
+}
+
+sampleLine
+{
+    U
+    {
+        file            "<case>/postProcessing/sampleLine/7/data_U.csv";
+    }
+}
+
+
+// ************************************************************************* //
