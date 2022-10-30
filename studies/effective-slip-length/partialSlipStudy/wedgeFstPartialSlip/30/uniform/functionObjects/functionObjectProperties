@@ -1,0 +1,61 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2206                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "30/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    sampleLine
+    {
+        vector
+        {
+            average(data,U) ( -2.24116e-09 0.0918808 5.54099e-13 );
+            min(data,U)     ( -8.714050000000001e-09 2.58491e-05 -3.30533e-10 );
+            max(data,U)     ( 1.90508e-09 0.202734 2.35991e-12 );
+            average(U)      ( -2.24116e-09 0.0918808 5.54099e-13 );
+            min(U)          ( -8.714050000000001e-09 2.58491e-05 -3.30533e-10 );
+            max(U)          ( 1.90508e-09 0.202734 2.35991e-12 );
+        }
+        label
+        {
+            size(data,U)    199;
+            size(U)         199;
+        }
+    }
+    forces
+    {
+        vector
+        {
+            pressureForce   ( 0 0 -0.00016569 );
+            viscousForce    ( -1.53783e-08 0.033605 -1.50007e-13 );
+            internalForce   ( 0 0 0 );
+            pressureMoment  ( -9.83465e-25 4.24096e-06 0 );
+            viscousMoment   ( 1.76479e-33 9.817610000000001e-15 0.000806369 );
+            internalMoment  ( 0 0 0 );
+        }
+    }
+}
+
+sampleLine
+{
+    U
+    {
+        file            "<case>/postProcessing/sampleLine/30/data_U.csv";
+    }
+}
+
+
+// ************************************************************************* //

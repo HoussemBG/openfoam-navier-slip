@@ -23,13 +23,13 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         1.4e-6;
+endTime         0.01;
 
-deltaT          1e-08;
+deltaT          1e-4;
 
 writeControl    timeStep;
 
-writeInterval   20;
+writeInterval   1;
 
 purgeWrite      0;
 
@@ -86,7 +86,7 @@ functions
         rho                   rhoInf;
         rhoInf                828;
         writeControl          timeStep;
-        writeInterval         10;
+        writeInterval         1;
     }
 }
 

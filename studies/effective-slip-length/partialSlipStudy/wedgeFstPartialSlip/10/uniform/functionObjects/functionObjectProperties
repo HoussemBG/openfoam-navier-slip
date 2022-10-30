@@ -22,28 +22,28 @@ cdf7e925f5746741c316f5fbcf39ad0dfca90775
     {
         vector
         {
-            average(data,U) ( 291.534 0.104919 -7.02334 );
-            min(data,U)     ( -2571.75 0.00143472 -450.833 );
-            max(data,U)     ( 3894.11 0.306754 470.109 );
-            average(U)      ( 291.534 0.104919 -7.02334 );
-            min(U)          ( -2571.75 0.00143472 -450.833 );
-            max(U)          ( 3894.11 0.306754 470.109 );
+            average(data,U) ( -2.4905e-09 0.0510303 -3.44705e-13 );
+            min(data,U)     ( -7.0671e-09 1.57562e-05 -3.22678e-10 );
+            max(data,U)     ( -2.10918e-11 0.121805 2.45909e-12 );
+            average(U)      ( -2.4905e-09 0.0510303 -3.44705e-13 );
+            min(U)          ( -7.0671e-09 1.57562e-05 -3.22678e-10 );
+            max(U)          ( -2.10918e-11 0.121805 2.45909e-12 );
         }
         label
         {
-            size(data,U)    200;
-            size(U)         200;
+            size(data,U)    199;
+            size(U)         199;
         }
     }
     forces
     {
         vector
         {
-            pressureForce   ( 0 0 -5243660 );
-            viscousForce    ( -15.4759 0.00186806 -0.576987 );
+            pressureForce   ( 0 0 -8.84652e-05 );
+            viscousForce    ( -7.31539e-09 0.0109415 -8.50355e-14 );
             internalForce   ( 0 0 0 );
-            pressureMoment  ( 2.148e-16 125390 0 );
-            viscousMoment   ( 5.36665e-23 0.0128252 4.44688e-05 );
+            pressureMoment  ( -5.25077e-25 2.26428e-06 0 );
+            viscousMoment   ( 1.30311e-33 5.49719e-15 0.00026255 );
             internalMoment  ( 0 0 0 );
         }
     }

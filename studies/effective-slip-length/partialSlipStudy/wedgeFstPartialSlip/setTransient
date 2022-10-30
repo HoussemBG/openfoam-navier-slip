@@ -1,8 +1,10 @@
 #!/bin/sh
 
-
-for file in system/*.steadyState;
+function setTransient()
+{
+for file in system/*.transient;
 do
-    cp $file ${file%%.steadyState}
+    cp $file ${file%%.transient}
     #cp system/file system/${file##.*}
 done
+}
