@@ -1,0 +1,61 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2206                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "230/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    sampleLine
+    {
+        vector
+        {
+            average(data,U) ( -1.56663e-09 0.09760149999999999 3.06611e-12 );
+            min(data,U)     ( -5.98608e-09 3.44342e-05 2.00684e-12 );
+            max(data,U)     ( 4.89058e-11 0.203684 8.2193e-12 );
+            average(U)      ( -1.56663e-09 0.09760149999999999 3.06611e-12 );
+            min(U)          ( -5.98608e-09 3.44342e-05 2.00684e-12 );
+            max(U)          ( 4.89058e-11 0.203684 8.2193e-12 );
+        }
+        label
+        {
+            size(data,U)    199;
+            size(U)         199;
+        }
+    }
+    forces
+    {
+        vector
+        {
+            pressureForce   ( 0 0 -0.000169334 );
+            viscousForce    ( -1.19633e-08 0.0295337 -6.10801e-14 );
+            internalForce   ( 0 0 0 );
+            pressureMoment  ( -1.00511e-24 4.33428e-06 0 );
+            viscousMoment   ( 2.48397e-33 1.66189e-14 0.000708667 );
+            internalMoment  ( 0 0 0 );
+        }
+    }
+}
+
+sampleLine
+{
+    U
+    {
+        file            "<case>/postProcessing/sampleLine/230/data_U.csv";
+    }
+}
+
+
+// ************************************************************************* //
