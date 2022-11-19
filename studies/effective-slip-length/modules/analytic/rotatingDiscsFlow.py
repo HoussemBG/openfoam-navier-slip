@@ -82,3 +82,5 @@ def v_pao1972_scaled(r, z, beta, N):
         v_phi_r.append(v_phi_rj)
 
     return np.array(v_phi_r)
+def v_FST(r,z,lambda_b,lambda_t,h)
+return 

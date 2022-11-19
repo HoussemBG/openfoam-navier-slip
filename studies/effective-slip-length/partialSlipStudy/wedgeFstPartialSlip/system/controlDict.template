@@ -15,7 +15,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     pimpleFoam;
+application     simpleFoam;
 
 startFrom       startTime;
 
@@ -23,17 +23,17 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         0.01;
+endTime         100000;
 
-deltaT          1e-4;
+deltaT          1;
 
 writeControl    timeStep;
 
-writeInterval   1;
+writeInterval   100;
 
 purgeWrite      0;
 
-writeFormat     binary;
+writeFormat     ascii;
 
 writePrecision  6;
 
@@ -48,6 +48,9 @@ runTimeModifiable true;
 adjustTimeStep  no;
 
 maxCo           0.2;
+
+libs ("navierSlipBc.so");
+
 
 functions
 {
@@ -68,7 +71,7 @@ functions
                 axis    x;
                 start   (0 0 #calc "float(@!H!@/1000/2)");
                 end     (32e-3 0 #calc "float(@!H!@/1000/2)");
-                nPoints 200;
+                nPoints 1000;
             }
         );
 
@@ -87,6 +90,7 @@ functions
         rhoInf                828;
         writeControl          timeStep;
         writeInterval         1;
+
     }
 }
 
