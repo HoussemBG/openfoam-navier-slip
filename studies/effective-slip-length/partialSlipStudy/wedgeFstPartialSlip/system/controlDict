@@ -66,11 +66,11 @@ functions
         (
             data
             {
-                type    uniform;
+                type    face;
                 axis    x;
                 start   (0 0 2.5e-6);
                 end     (32e-3 0 2.5e-6);
-                nPoints 200;
+                //nPoints 1000;
             }
         );
 
